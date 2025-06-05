@@ -31,7 +31,7 @@ interface Game {
 }
 
 const fetchGames = async (): Promise<ApiGame[]> => {
-  const response = await fetch('/api/games'); // Replace with your actual API endpoint
+  const response = await fetch('https://localhost:7240/livescore');
   if (!response.ok) {
     throw new Error('Failed to fetch games');
   }
